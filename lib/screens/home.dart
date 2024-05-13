@@ -15,6 +15,7 @@ class Home extends StatefulWidget {
 }
 
 class _HomeState extends State<Home> {
+
   @override
   void initState() {
     super.initState();
@@ -25,7 +26,7 @@ class _HomeState extends State<Home> {
     return SafeArea(
         child: Container(
       decoration: AppBackgroundProperties.boxDecoration,
-      child: const Scaffold(
+      child: Scaffold(
         backgroundColor: Colors.transparent,
         body: Center(
           child: _EmptyHome(),

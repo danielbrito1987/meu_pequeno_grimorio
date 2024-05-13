@@ -15,19 +15,17 @@ class _SignupState extends State<Signup> {
 
   @override
   Widget build(BuildContext context) {
-    return SafeArea(
-        child: Container(
+    return SafeArea(child: Container(
       decoration: AppBackgroundProperties.boxDecoration,
       child: Scaffold(
         backgroundColor: Colors.transparent,
         body: Center(
           child: SingleChildScrollView(
-            child: Column(
-              children: <Widget>[
-                const Padding(
-                  padding: EdgeInsets.only(bottom: 16.0),
-                  child: DisplayText("Cadastre-se"),
-                ),
+            child: Column(children: <Widget>[
+              const Padding(
+                padding: EdgeInsets.only(bottom: 16.0),
+                child: DisplayText("Cadastre-se"),
+              ),
                 SizedBox(
                   width: 246,
                   child: Form(
